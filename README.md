@@ -1,6 +1,6 @@
 # Neworld Project
 
-Neworld is a React-based web application that showcases country details and provides interactive features. This project is developed for [your purpose, e.g., a frontend development bootcamp].
+Neworld is a React-based web application that showcases country details and provides interactive features. This project is developed for a frontend development project in UREEKA.
 
 ## Features
 - **Homepage**: A welcoming landing page.
