@@ -1,5 +1,5 @@
 // import PropTypes from "prop-types";
-import "./card.css";
+import "./Card.css";
 /* eslint-disable react/prop-types */
 
 function Card({ img, name, capital, region, population, onClick }) {
