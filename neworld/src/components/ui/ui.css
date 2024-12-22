@@ -1,0 +1,118 @@
+/* Header */
+header {
+  /* border: 2px solid; */
+  /* display: inline-block; */
+  /* margin-inline: auto; */
+  /* width: fit-content; */
+  /* border-radius: 40px; */
+  background-color: white;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  /* left: 50%; */
+  top: 0px;
+  z-index: 25;
+  /* transform: translateX(-50%); */
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 24px;
+}
+
+/* Countries List Page */
+.countries-page-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px;
+}
+
+.countries-page-top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  /* border: 1px solid #ddd; */
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  gap: 16px;
+  width: 100%;
+  max-width: 400px;
+  max-height: fit-content;
+}
+
+.search-bar-icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
+
+.search-bar-input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+/* Dropdown filter */
+.dropdown-filter {
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  border-radius: 8px;
+  gap: 16px;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.dropdown-filter-select {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* .dropdown-filter-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+} */
+
+.countries-page-bottom-section {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(320px, 1fr));
+  /* grid-template-columns: repeat(4, 1fr); */
+  padding-block: 48px;
+  width: 100%;
+  gap: 48px;
+  justify-items: center;
+}
+
+/* Countries Detail Page */
+
+.country-detail-header {
+  text-align: center;
+  /* border: 1px solid; */
+  padding: 32px;
+}
+
+.country-detail-body {
+  display: flex;
+  padding: 48px;
+  justify-content: center;
+  align-items: center;
+}
