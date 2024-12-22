@@ -11,3 +11,8 @@ Neworld is a React-based web application that showcases country details and prov
 ## Tech Stack
 - **Frontend**: React.js, Vite
 - **API**: [REST Countries API](https://restcountries.com/)
+
+### Installation
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/JuanThoriq/NeWorld_Ureeka_Project.git
