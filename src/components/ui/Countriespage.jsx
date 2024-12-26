@@ -43,7 +43,7 @@ function Countriespage() {
               <option value="">All Regions </option>
               <option value="Asia">Asia</option>
               <option value="Europe">Europe</option>
-              <option value="America">America</option>
+              <option value="Americas">America</option>
             </select>
           </div>
         </div>
