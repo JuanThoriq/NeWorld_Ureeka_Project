@@ -199,3 +199,40 @@ header ul li:hover {
   font-weight: normal;
   margin-bottom: 16px;
 }
+
+/* Utility: center content vertically and horizontally */
+.center-page {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Pagination */
+.pagination {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.pagination-info {
+  padding: 0 8px;
+}
+
+/* About page */
+.about-container {
+  padding: 48px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.about-title {
+  margin-bottom: 16px;
+}
+
+.about-paragraph {
+  margin-bottom: 12px;
+}

@@ -13,8 +13,8 @@ function Errorpage() {
         <h2 className="error-header-message">404</h2>
         <p className="error-message-1">Page not found</p>
         <p className="error-message-2">
-          The page you are looking for doesnt exist. <br /> Click the button
-          bellow to get back to the main menu
+          The page you are looking for doesn&apos;t exist. <br /> Click the button
+          below to get back to the main menu
         </p>
         <Button text={"Back"} onClick={backToHomepage} />
       </section>

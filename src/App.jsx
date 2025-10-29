@@ -8,6 +8,7 @@ import { Homepage } from "./components/ui/Homepage";
 import { Countriespage } from "./components/ui/Countriespage";
 import { Countrydetail } from "./components/ui/Countrydetail";
 import { Errorpage } from "./components/ui/Errorpage";
+import { About } from "./components/ui/About";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="countries" element={<Countriespage />} />
         <Route path="countries/:name" element={<Countrydetail />} />
-        <Route path="about" element={<div>About Page</div>} />
+        <Route path="about" element={<About />} />
         <Route path="*" element={<Errorpage />} />
       </Routes>
     </>

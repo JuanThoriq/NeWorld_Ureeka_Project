@@ -11,25 +11,48 @@ function Countrydetail() {
 
   useEffect(() => {
     const fetchDataCountry = async () => {
+      setLoading(true);
+      setError(null);
       try {
+        const fields = [
+          "name",
+          "flags",
+          "languages",
+          "region",
+          "timezones",
+          "population",
+          "capital",
+          "currencies",
+        ].join(",");
         const response = await fetch(
-          `https://restcountries.com/v3.1/name/${name}`
+          `https://restcountries.com/v3.1/name/${encodeURIComponent(name)}?fullText=true&fields=${fields}`
         );
-        if (!response.ok) throw new Error("Failed to fetch countries");
+        if (!response.ok) throw new Error("Failed to fetch country");
         const data = await response.json();
+        if (!Array.isArray(data) || data.length === 0) throw new Error("Country not found");
         setCountry(data[0]);
-        setLoading(false);
       } catch (error) {
         console.log(error);
-        setError(error.message);
+        setError(error.message || "Unknown error");
+      } finally {
         setLoading(false);
       }
     };
     fetchDataCountry();
   }, [name]);
 
-  if (loading) return <SpinnerContainer />;
-  if (error) return <p>Error: {error}</p>;
+  if (loading)
+    return (
+      <div className="center-page">
+        <SpinnerContainer />
+      </div>
+    );
+  if (error)
+    return (
+      <div className="error-state" style={{ textAlign: "center", padding: 24 }}>
+        <p>Error: {error}</p>
+      </div>
+    );
   //   const { latlng } = country; // Ambil koordinat lat dan lng dari API
 
   return (
@@ -54,7 +77,7 @@ function Countrydetail() {
                   </p>
                   <p className="region">Region: {country.region}</p>
                   <p className="population">
-                    Population: {country?.population.toLocaleString() || "N/A"}
+                    Population: {country?.population?.toLocaleString?.() || "N/A"}
                   </p>
                   <p className="currency">
                     Currency: {Object.values(country.currencies || {})[0].name}
